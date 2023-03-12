@@ -32,6 +32,11 @@ void diskulator_hosts_eject_device_slot(unsigned char i, unsigned char pos, Cont
 void diskulator_hosts_set_device_slot_mode(unsigned char i, unsigned char mode, Context *context);
 
 /**
+ * Swaps a file in a slot to another slot
+ */
+void diskulator_hosts_switch_device_slot(unsigned char old, unsigned char pos, Context * context);
+
+/**
  * Hosts/Devices screen
  */
 State diskulator_hosts(Context *context);
